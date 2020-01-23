@@ -1,4 +1,4 @@
-project('libinireader', 'cpp',
+project('libinireader', 'c', 'cpp',
     meson_version: '>= 0.50.0')
 
 inc = include_directories([
@@ -6,6 +6,7 @@ inc = include_directories([
 ])
 
 src = [
+    'ini.c',
     'cpp/INIReader.cpp'
 ]
 
